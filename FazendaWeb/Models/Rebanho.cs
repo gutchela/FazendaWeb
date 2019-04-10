@@ -13,5 +13,24 @@ namespace FazendaWeb.Models
         public string Raca { get; set; }
         public string Sexo { get; set; }
         public string Origem { get; set; }
+        public Pasto Pasto { get; set; }
+
+        public Rebanho()
+        {
+
+        }
+
+        public Rebanho(int id, string nome, DateTime dataNascimento, string raca, string sexo, string origem, Pasto pasto)
+        {
+            Id = id;
+            Nome = nome;
+            DataNascimento = dataNascimento;
+            Raca = raca;
+            Sexo = sexo;
+            Origem = origem;
+            Pasto = pasto;
+        }
+
+      
     }
 }

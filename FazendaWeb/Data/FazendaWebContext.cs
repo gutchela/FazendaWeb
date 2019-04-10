@@ -13,6 +13,7 @@ namespace FazendaWeb.Models
         {
         }
 
-        public DbSet<FazendaWeb.Models.Rebanho> Rebanho { get; set; }
+        public DbSet<Rebanho> Rebanho { get; set; }
+        public DbSet<Pasto> Pasto { get; set; }
     }
 }
